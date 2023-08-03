@@ -1,3 +1,5 @@
+/* 04: COMPONENTES, DIRECTORIO SRC, FRAGMENTS, PROPS, PROPTYPES, DEFAULTPROPS, EVENTOS, USESTATE */
+
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
