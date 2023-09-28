@@ -1,5 +1,5 @@
 /* PRUEBAS UNITARIAS CON JEST Y ENZIME. USAR REACT v17 
-* Para seleccionar otra versión de React, buscar en el package.json estas líneas:
+* Para seleccionar otra versión de React (v17), buscar en el package.json estas líneas:
 "@testing-library/react": "^12.1.1",
 "@testing-library/user-event": "^12.5.0",
 "react": "^17.0.2",
