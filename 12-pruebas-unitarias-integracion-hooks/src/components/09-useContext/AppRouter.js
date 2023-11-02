@@ -1,5 +1,4 @@
 import React from "react";
-/* IMPORTANTE: instalar "npm i react-router-dom" */
 /* Para React Router v5.x -> usar Switch;
 * Para React Router V6.x -> usar Routes.
  */
