@@ -12,7 +12,6 @@ Añadir Bootstrap v4.6 en public/index.html (<link rel="stylesheet" href="https:
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />)
-* NO INSTALAR npm i query-string
 */
 
 import React from 'react';

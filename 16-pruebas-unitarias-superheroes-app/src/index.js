@@ -11,8 +11,25 @@ Añadir Bootstrap v4.6 en public/index.html (<link rel="stylesheet" href="https:
 * Añadir Animate.css (<link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+* Instalar npm i query-string
   />)
-*/
+
+ NOTAS para pruebas unitarias y de integración-> Instalar (para React v17 y Enzyme):
+* 1. npm i react-router-dom
+* 2. npm install --save-dev jest
+* 3. npm install --legacy-peer-deps --save-dev @wojtekmaj/enzyme-adapter-react-17
+* 4. npm install --save-dev enzyme
+* 5. npm install --save-dev enzyme-to-json
+* 6. npm install --save-dev @testing-library/react-hooks
+* 7. npm install --save-dev @babel/plugin-proposal-private-property-in-object --legacy-peer-deps
+* 8. Crear archivo "setupTests.js" en directorio 'src' y pegar lo siguiente:
+        import Enzyme from 'enzyme'
+        import Adapter from '@wojtekmaj/enzyme-adapter-react-17'
+        import { createSerializer } from 'enzyme-to-json'
+
+        Enzyme.configure({ adapter: new Adapter() });
+        expect.addSnapshotSerializer(createSerializer({ mode: 'deep' }))
+ */
 
 import React from 'react';
 import ReactDOM from 'react-dom';

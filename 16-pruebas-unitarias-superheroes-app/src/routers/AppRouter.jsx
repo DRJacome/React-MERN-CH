@@ -11,6 +11,7 @@ import { AutenticacionContext } from "../auth/AutenticacionContext";
 
 export const AppRouter = () => {
   const { usuario } = useContext(AutenticacionContext)
+  console.log(usuario);
 
   return (
     <Router>
