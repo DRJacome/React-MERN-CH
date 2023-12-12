@@ -1,0 +1,11 @@
+{
+    "editor.detectIndentation": false,
+    "editor.semanticTokenColorCustomizations": {
+
+    },
+    "editor.tokenColorCustomizations": {
+
+    },
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+    "prettier.tabWidth": 4
+}
