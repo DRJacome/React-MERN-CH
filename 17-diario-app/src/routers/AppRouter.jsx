@@ -6,7 +6,8 @@ import {
   Redirect
 } from "react-router-dom";
 import { AuthRouter } from './AuthRouter';
-import { PantallaDiario } from '../diario/PantallaDiario';
+import { PantallaDiario } from '../components/diario/PantallaDiario';
+
 
 
 

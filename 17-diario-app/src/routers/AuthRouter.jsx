@@ -1,7 +1,8 @@
 import React from 'react'
 import { Redirect, Switch, Route } from 'react-router-dom'
-import { PantallaLogin } from '../auth/PantallaLogin'
-import { PantallaRegistro } from '../auth/PantallaRegistro'
+import { PantallaLogin } from '../components/auth/PantallaLogin'
+import { PantallaRegistro } from '../components/auth/PantallaRegistro'
+
 
 
 export const AuthRouter = () => {
