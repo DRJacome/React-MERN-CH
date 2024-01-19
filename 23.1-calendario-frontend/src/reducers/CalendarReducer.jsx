@@ -1,5 +1,6 @@
 import moment from "moment";
 import { types } from '../types/types';
+
 const estadoInicial = {
     events: [
         {
@@ -18,7 +19,7 @@ const estadoInicial = {
     activeEvent: null
 };
 
-export const calendarReducer = (state = estadoInicial, action) => {
+export const CalendarReducer = (state = estadoInicial, action) => {
     switch (action.type) {
         case types.setActiveEvent:
             return {

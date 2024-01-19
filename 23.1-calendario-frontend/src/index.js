@@ -17,8 +17,7 @@ en store.js: const composeEnhancers = (typeof window !== 'undefined' && window._
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { CalendarApp } from './CalendarApp';
-import './styles.css'
-
+import './styles.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
