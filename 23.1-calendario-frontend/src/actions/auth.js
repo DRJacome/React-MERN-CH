@@ -1,6 +1,7 @@
 import { fetchConToken, fetchSinToken } from "../helpers/fetch"
 import { types } from "../types/types";
 import Swal from "sweetalert2";
+import { eventLogout } from "./eventos";
 
 /* En esta app habrá dos tipos de peticiones: con o sin token.
     En este archivo se comprobará si la acción disparada por la petición http es para
@@ -26,7 +27,7 @@ export const startLogin = (email, password) => {
                 name: body.name
             }));
         } else {
-            Swal.fire('Error!', body.msg, 'error');
+            Swal.fire('Error!\n El correo y/o la contraseña no son válidos', body.msg, 'error');
         }
     }
 }
@@ -80,6 +81,7 @@ const login = (user) => ({
 export const startLogout = () => {
     return (dispatch) => {
         localStorage.clear();
+        dispatch(eventLogout());
         dispatch(logout());
     };
 };

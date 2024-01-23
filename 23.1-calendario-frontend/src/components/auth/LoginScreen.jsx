@@ -5,9 +5,15 @@ import { startLogin, startRegistro } from '../../actions/auth';
 import './login.css';
 import Swal from 'sweetalert2';
 
+/* usuario: 
+        loginEmail: 'david@gmail.com',
+        loginPassword: 'abc123.'
+*/
+
 export const LoginScreen = () => {
 
     const dispatch = useDispatch();
+
 
     const [valoresFormularioLogin, gestionarLoginInput] = useForm({
         loginEmail: 'david@gmail.com',
@@ -17,8 +23,8 @@ export const LoginScreen = () => {
     const { loginEmail, loginPassword } = valoresFormularioLogin;
 
     const [valoresFormularioRegistro, gestionarRegistroInput] = useForm({
-        registroName: 'Pedro',
-        registroEmail: 'pedro@gmail.com',
+        registroName: 'Sara',
+        registroEmail: 'sara@gmail.com',
         registroPassword1: 'abc123.',
         registroPassword2: 'abc123.'
     });
@@ -57,7 +63,7 @@ export const LoginScreen = () => {
                             <input
                                 type="text"
                                 className="form-control"
-                                placeholder="Correo"
+                                placeholder="Correo electrónico"
                                 name="loginEmail"
                                 value={loginEmail}
                                 onChange={gestionarLoginInput}
